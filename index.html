@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dad Squad - Rent-a-Dad Handyman Service | Silver Lake, Atwater Village, Los Feliz, Glendale</title>
+<meta name="description" content="The Dad Squad: Your neighborhood rent-a-dad handyman service. Home repairs, furniture builds, and general fixes in Silver Lake, Atwater Village, Los Feliz, and Glendale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --warm-cream: #FAF3E8;
+    --dad-orange: #E8722A;
+    --dad-orange-light: #F4A261;
+    --dark-brown: #3D2B1F;
+    --warm-brown: #6B4226;
+    --sage: #7A8B6F;
+    --sage-light: #C2CEAB;
+    --soft-white: #FFFDF9;
+    --tape-yellow: #F2D06B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-cream);
+    color: var(--dark-brown);
+    overflow-x: hidden;
+  }
+
+  /* ---- HEADER ---- */
+  header {
+    background: var(--dark-brown);
+    color: var(--warm-cream);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .logo .wrench {
+    display: inline-block;
+    font-size: 1.4rem;
+    transform: rotate(-20deg);
+  }
+
+  .topbar-contact {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .topbar-contact a {
+    color: var(--dad-orange-light);
+    text-decoration: none;
+  }
+
+  .hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    max-width: 700px;
+  }
+
+  .hero-text h1 span {
+    color: var(--dad-orange);
+  }
+
+  .tagline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--dad-orange-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 520px;
+    opacity: 0.85;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.4rem;
+    background: var(--dad-orange);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .cta-btn:hover {
+    background: var(--dad-orange-light);
+    transform: translateY(-2px);
+  }
+
+  /* Decorative tape strip */
+  .tape-strip {
+    height: 8px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--tape-yellow) 0px,
+      var(--tape-yellow) 20px,
+      var(--dark-brown) 20px,
+      var(--dark-brown) 24px
+    );
+  }
+
+  /* ---- SERVICES ---- */
+  .services {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--sage);
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom: 1rem;
+    color: var(--dark-brown);
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+    color: var(--warm-brown);
+    max-width: 550px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    background: var(--soft-white);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 2rem 1.6rem;
+    transition: border-color 0.2s, transform 0.15s;
+  }
+
+  .service-card:hover {
+    border-color: var(--sage-light);
+    transform: translateY(-3px);
+  }
+
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .service-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--warm-brown);
+  }
+
+  /* ---- ABOUT ---- */
+  .about {
+    background: var(--dark-brown);
+    color: var(--warm-cream);
+  }
+
+  .about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    .about-inner { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  .about .section-label { color: var(--dad-orange-light); }
+  .about .section-title { color: var(--warm-cream); }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    opacity: 0.85;
+    margin-bottom: 1rem;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-box {
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: var(--dad-orange);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+  }
+
+  /* ---- AREAS ---- */
+  .areas {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .areas .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .area-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .area-tag {
+    background: var(--soft-white);
+    border: 2px solid var(--sage-light);
+    border-radius: 50px;
+    padding: 0.7rem 1.6rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dark-brown);
+    transition: background 0.2s;
+  }
+
+  .area-tag:hover {
+    background: var(--sage-light);
+  }
+
+  /* ---- CONTACT / CTA ---- */
+  .contact {
+    background: var(--dad-orange);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+
+  .contact h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .contact p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .contact-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-method {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+    min-width: 200px;
+  }
+
+  .contact-method .label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-bottom: 0.3rem;
+  }
+
+  .contact-method .value {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+
+  .contact-method a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* ---- FOOTER ---- */
+  footer {
+    background: var(--dark-brown);
+    color: var(--warm-cream);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-text { animation: fadeUp 0.8s ease-out; }
+
+  .service-card {
+    animation: fadeUp 0.6s ease-out both;
+  }
+  .service-card:nth-child(1) { animation-delay: 0.1s; }
+  .service-card:nth-child(2) { animation-delay: 0.2s; }
+  .service-card:nth-child(3) { animation-delay: 0.3s; }
+  .service-card:nth-child(4) { animation-delay: 0.4s; }
+  .service-card:nth-child(5) { animation-delay: 0.5s; }
+  .service-card:nth-child(6) { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="topbar">
+      <div class="logo"><span class="wrench">ð§</span> The Dad Squad</div>
+      <div class="topbar-contact">
+        Call or text: <a href="tel:+13234408809">(323) 440-8809</a>
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1>Your neighborhood <span>Rent-a-Dad.</span></h1>
+      <div class="tagline">"Because dad can fix it."</div>
+      <p>Two real dads. One shared toolbox. We handle the home repairs, furniture builds, and odd jobs you've been putting off. Serving the eastside of LA with a handshake and a can-do attitude.</p>
+      <a href="#contact" class="cta-btn">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+<div class="tape-strip"></div>
+
+<section class="services">
+  <div class="section-label">What We Do</div>
+  <h2 class="section-title">If it's broken, wobbly, or half-finished, we're on it.</h2>
+  <p class="section-subtitle">No job too small, no shelf too crooked. We're the guys who actually finish the honey-do list.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">ð </span>
+      <h3>Home Repairs</h3>
+      <p>Leaky faucets, squeaky doors, drywall patches, broken fixtures. The stuff that's been bugging you for months.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">ðª</span>
+      <h3>Furniture Builds</h3>
+      <p>IKEA assembly, custom shelving, flat-pack nightmares. We build it right so it stays standing.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">ð¼</span>
+      <h3>Mounting & Hanging</h3>
+      <p>TVs, shelves, mirrors, art. Mounted level, anchored properly, no guesswork.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">ð¡</span>
+      <h3>Odd Jobs</h3>
+      <p>Caulking, weatherstripping, baby-proofing, pet doors. The random stuff that makes a house feel like home.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">ð©</span>
+      <h3>Assembly & Install</h3>
+      <p>Exercise equipment, basketball hoops, ceiling fans, garage storage. If it comes in a box, we'll handle it.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">ð¨</span>
+      <h3>Paint & Touch-Ups</h3>
+      <p>Accent walls, trim work, cabinet refreshes, touch-ups from life with kids. Clean lines, no mess.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">Just two dads who are handy.</h2>
+      <p>We're Jason and Andy -- one's a cybersecurity nerd, the other's an actor. By day we do completely different things. But on weekends and evenings, we're the guys your neighbors call when something needs fixing.</p>
+      <p>We're not licensed contractors. We're the dads who actually own the tools, know how to use them, and show up when we say we will. Fair prices, honest work, zero BS.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-box">
+        <span class="stat-number">2</span>
+        <div class="stat-label">Dads on the job</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">4</span>
+        <div class="stat-label">Neighborhoods served</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">0</span>
+        <div class="stat-label">Leftover screws (usually)</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">100%</span>
+        <div class="stat-label">Dad jokes included</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="section-label">Where We Work</div>
+  <h2 class="section-title">Eastside LA's favorite dads.</h2>
+  <p class="section-subtitle">We keep it local so we can keep it personal. If you're in one of these neighborhoods, we're just around the corner.</p>
+  <div class="area-tags">
+    <div class="area-tag">Silver Lake</div>
+    <div class="area-tag">Atwater Village</div>
+    <div class="area-tag">Los Feliz</div>
+    <div class="area-tag">Glendale</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Ready to rent a dad?</h2>
+  <p>Call or text. We'll get back to you fast -- probably faster than your actual dad returns a call.</p>
+  <div class="contact-methods">
+    <div class="contact-method">
+      <div class="label">Call or Text</div>
+      <div class="value"><a href="tel:+13234408809">(323) 440-8809</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 The Dad Squad. All rights reserved. Two dads, one toolbox.
+</footer>
+
+</body>
+</html>
+
