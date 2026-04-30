@@ -670,6 +670,13 @@
 </footer>
 
 <script>
+// Route /shop path to shop section
+if (window.location.pathname === '/shop') {
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('shop').scrollIntoView();
+  });
+}
+
 document.querySelectorAll('[data-gallery]').forEach(gallery => {
   const imgs = gallery.querySelectorAll('img');
   const dots = gallery.querySelectorAll('.shop-gallery-dot');
