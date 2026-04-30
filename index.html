@@ -66,9 +66,14 @@
   }
 
   .logo .wrench {
-    display: inline-block;
-    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
     transform: rotate(-20deg);
+  }
+
+  .logo .wrench svg {
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .topbar-contact {
@@ -193,9 +198,19 @@
   }
 
   .service-icon {
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--warm-cream);
+    border-radius: 8px;
     margin-bottom: 1rem;
-    display: block;
+  }
+
+  .service-icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
   }
 
   .service-card h3 {
@@ -398,7 +413,7 @@
 <header>
   <div class="header-inner">
     <div class="topbar">
-      <div class="logo"><span class="wrench">ð§</span> The Dad Squad</div>
+      <div class="logo"><span class="wrench"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span> The Dad Squad</div>
       <div class="topbar-contact">
         Call or text: <a href="tel:+13234408809">(323) 440-8809</a>
       </div>
@@ -420,32 +435,32 @@
 
   <div class="services-grid">
     <div class="service-card">
-      <span class="service-icon">ð </span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
       <h3>Home Repairs</h3>
       <p>Leaky faucets, squeaky doors, drywall patches, broken fixtures. The stuff that's been bugging you for months.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">ðª</span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="6" rx="1"/><path d="M6 10v8"/><path d="M18 10v8"/><path d="M4 16h16"/></svg></span>
       <h3>Furniture Builds</h3>
       <p>IKEA assembly, custom shelving, flat-pack nightmares. We build it right so it stays standing.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">ð¼</span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M12 2v3"/><circle cx="12" cy="2" r="1"/></svg></span>
       <h3>Mounting & Hanging</h3>
       <p>TVs, shelves, mirrors, art. Mounted level, anchored properly, no guesswork.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">ð¡</span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21v-6h6v6"/></svg></span>
       <h3>Odd Jobs</h3>
       <p>Caulking, weatherstripping, baby-proofing, pet doors. The random stuff that makes a house feel like home.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">ð©</span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span>
       <h3>Assembly & Install</h3>
       <p>Exercise equipment, basketball hoops, ceiling fans, garage storage. If it comes in a box, we'll handle it.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">ð¨</span>
+      <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--dad-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/><path d="M12 11v6"/><path d="M10 17h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"/></svg></span>
       <h3>Paint & Touch-Ups</h3>
       <p>Accent walls, trim work, cabinet refreshes, touch-ups from life with kids. Clean lines, no mess.</p>
     </div>
@@ -510,4 +525,3 @@
 
 </body>
 </html>
-
