@@ -534,6 +534,264 @@
   .service-card:nth-child(5) { animation-delay: 0.5s; }
   .service-card:nth-child(6) { animation-delay: 0.6s; }
   .service-card:nth-child(7) { animation-delay: 0.7s; }
+
+  /* ---- DETAILED TASKS ---- */
+  .tasks {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .tasks-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .task-category {
+    background: var(--soft-white);
+    border-radius: 10px;
+    padding: 1.8rem;
+  }
+
+  .task-category h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-brown);
+  }
+
+  .task-list {
+    list-style: none;
+  }
+
+  .task-list li {
+    font-size: 0.85rem;
+    color: var(--warm-brown);
+    padding: 0.3rem 0;
+    padding-left: 1.3rem;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .task-list li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--sage);
+    font-weight: 700;
+  }
+
+  .pro-callout {
+    background: var(--dark-brown);
+    color: var(--warm-cream);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  .pro-callout h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--dad-orange);
+  }
+
+  .pro-callout p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  /* ---- PERSONAS ---- */
+  .personas {
+    background: var(--soft-white);
+    padding: 5rem 2rem;
+  }
+
+  .personas-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .persona-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .persona-card {
+    background: var(--warm-cream);
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 4px solid var(--dad-orange);
+  }
+
+  .persona-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .persona-card .persona-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--warm-brown);
+    margin-bottom: 0.8rem;
+  }
+
+  .persona-tasks {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--warm-brown);
+  }
+
+  .persona-tasks li {
+    padding: 0.25rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+
+  .persona-tasks li::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    color: var(--dad-orange);
+  }
+
+  /* ---- TESTIMONIALS ---- */
+  .testimonials {
+    background: var(--sage);
+    padding: 5rem 2rem;
+  }
+
+  .testimonials-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .testimonials .section-label { color: var(--warm-cream); opacity: 0.8; }
+  .testimonials .section-title { color: var(--soft-white); }
+
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .testimonial-card {
+    background: var(--soft-white);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+
+  .testimonial-card blockquote {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--dark-brown);
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .testimonial-card .attribution {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--warm-brown);
+  }
+
+  /* ---- WHY US ---- */
+  .why-us {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .why-card {
+    background: var(--soft-white);
+    border-radius: 10px;
+    padding: 2rem;
+    border-left: 4px solid var(--dad-orange);
+  }
+
+  .why-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-card p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--warm-brown);
+  }
+
+  /* ---- DAD ON RETAINER ---- */
+  .retainer {
+    background: var(--dark-brown);
+    color: var(--warm-cream);
+  }
+
+  .retainer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .retainer .section-label { color: var(--dad-orange-light); }
+  .retainer .section-title { color: var(--warm-cream); }
+
+  .retainer-desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .retainer-perks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .retainer-perk {
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .retainer-perk h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dad-orange);
+    margin-bottom: 0.4rem;
+  }
+
+  .retainer-perk p {
+    font-size: 0.88rem;
+    opacity: 0.75;
+    line-height: 1.5;
+  }
 </style>
 
 <!-- Meta Pixel Code -->
@@ -579,7 +837,7 @@
 <section class="services">
   <div class="section-label">What We Do</div>
   <h2 class="section-title">If it's broken, wobbly, or half-finished, we're on it.</h2>
-  <p class="section-subtitle">No job too small, no shelf too crooked. We're the guys who actually finish the honey-do list.</p>
+  <p class="section-subtitle">No job too small, no shelf too crooked. That honey-do list ruining your weekend? Hand it over.</p>
 
   <div class="services-grid">
     <div class="service-card">
@@ -617,6 +875,228 @@
       <h3>Hauling & Delivery</h3>
       <p>We've got the truck. Furniture pickup, dump runs, donation drop-offs, moving help. No need to rent a U-Haul for one load.</p>
     </div>
+  </div>
+</section>
+
+<section class="tasks">
+  <div class="section-label">The Full List</div>
+  <h2 class="section-title">Everything we fix, build, install, and haul.</h2>
+  <p class="section-subtitle">Not sure if it's a Dad Squad job? If it's on this list, we've got it. No minimum, no trip charge.</p>
+
+  <div class="tasks-categories">
+    <div class="task-category">
+      <h3>Electrical (Light Stuff)</h3>
+      <ul class="task-list">
+        <li>Install or replace ceiling fans</li>
+        <li>Swap out light fixtures</li>
+        <li>Replace outlets, switches, and cover plates</li>
+        <li>Change smoke detector batteries</li>
+        <li>Replace fluorescent lights with LEDs</li>
+        <li>Install smart switches and dimmers</li>
+        <li>Set up smart home devices</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Plumbing (Light Stuff)</h3>
+      <ul class="task-list">
+        <li>Fix leaky faucets and running toilets</li>
+        <li>Replace shower heads and faucet hardware</li>
+        <li>Clear clogged drains</li>
+        <li>Install garbage disposals</li>
+        <li>Fix leaking outdoor spigots</li>
+        <li>Replace toilet seats and hardware</li>
+        <li>Install under-sink water filters</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Doors, Windows & Locks</h3>
+      <ul class="task-list">
+        <li>Install new door hardware and deadbolts</li>
+        <li>Install smart locks</li>
+        <li>Fix sticking or squeaky doors</li>
+        <li>Replace weatherstripping</li>
+        <li>Screen repair and replacement</li>
+        <li>Install curtain rods and blinds</li>
+        <li>Caulking and sealing</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Mounting & Hanging</h3>
+      <ul class="task-list">
+        <li>Mount flatscreen TVs (any size)</li>
+        <li>Hang mirrors and heavy artwork</li>
+        <li>Install floating shelves</li>
+        <li>Mount towel racks and bathroom accessories</li>
+        <li>Install bike racks and storage hooks</li>
+        <li>Set up garage organization systems</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Assembly & Install</h3>
+      <ul class="task-list">
+        <li>IKEA and flat-pack furniture</li>
+        <li>Bunk beds and cribs</li>
+        <li>Exercise equipment (Peloton, etc.)</li>
+        <li>Basketball hoops and swing sets</li>
+        <li>Patio furniture and outdoor dining</li>
+        <li>Ceiling fans and bathroom vents</li>
+        <li>Garage shelving and storage</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Paint, Patch & Finish</h3>
+      <ul class="task-list">
+        <li>Accent walls and color changes</li>
+        <li>Trim, baseboards, and crown molding touch-ups</li>
+        <li>Cabinet refreshes</li>
+        <li>Drywall patches and nail holes</li>
+        <li>Caulk and grout refresh</li>
+        <li>Power washing (decks, patios, driveways)</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Hauling & Moving</h3>
+      <ul class="task-list">
+        <li>Furniture pickup and delivery</li>
+        <li>Dump runs and junk removal</li>
+        <li>Donation drop-offs (Goodwill, Habitat)</li>
+        <li>Moving help (apartments, storage units)</li>
+        <li>Yard debris and bulk trash hauling</li>
+        <li>Marketplace and Craigslist pickups</li>
+      </ul>
+    </div>
+    <div class="task-category">
+      <h3>Home Safety & Kid Stuff</h3>
+      <ul class="task-list">
+        <li>Baby-proofing (gates, locks, covers)</li>
+        <li>Anchor furniture and TVs to walls</li>
+        <li>Install pet doors</li>
+        <li>Smoke and CO detector install</li>
+        <li>Non-slip stair treads</li>
+        <li>Grab bars and accessibility aids</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pro-callout">
+    <h3>Needs a licensed pro? We'll tell you.</h3>
+    <p>We handle the stuff on this list all day long. But if a job needs a licensed electrician or plumber (panel work, rewiring, pipe replacement, water heaters), we'll tell you straight and recommend someone we trust. No ego, just honest answers about what's safe and what's not.</p>
+  </div>
+</section>
+
+<section class="personas">
+  <div class="personas-inner">
+    <div class="section-label">Who Calls Us</div>
+    <h2 class="section-title">We get it. Life is busy.</h2>
+    <p class="section-subtitle">Every house has a list. Here's how we help different folks knock it out.</p>
+
+    <div class="persona-cards">
+      <div class="persona-card">
+        <h3>Busy Families</h3>
+        <p class="persona-desc">Both parents working, kids running around, and a list of house stuff that keeps growing. Sound familiar?</p>
+        <ul class="persona-tasks">
+          <li>Assemble the bunk beds before the cousins visit</li>
+          <li>Baby-proof the whole house in one shot</li>
+          <li>Mount the TV so the toddler stops pulling it</li>
+          <li>Fix the fence before the dog figures it out</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h3>New Homeowners</h3>
+        <p class="persona-desc">Just closed. The inspection report has 30 items. The previous owner's "fixes" are creative at best.</p>
+        <ul class="persona-tasks">
+          <li>Replace every janky door knob and lock</li>
+          <li>Fix the running toilet and leaky kitchen faucet</li>
+          <li>Install smart locks and a Ring doorbell</li>
+          <li>Patch all the nail holes from the last owner's art</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h3>Independent Homeowners</h3>
+        <p class="persona-desc">You own the house. You run the household. You just need someone reliable to handle the physical stuff.</p>
+        <ul class="persona-tasks">
+          <li>Hang the shelves you bought three months ago</li>
+          <li>Haul the old couch and pick up the new one</li>
+          <li>Fix the garbage disposal and leaky shower</li>
+          <li>Seasonal maintenance so nothing sneaks up on you</li>
+        </ul>
+      </div>
+      <div class="persona-card">
+        <h3>Aging Parents</h3>
+        <p class="persona-desc">Your parents' house needs work and you live across town. We'll take care of it like it's our own folks' place.</p>
+        <ul class="persona-tasks">
+          <li>Install grab bars in the bathroom</li>
+          <li>Fix the sticky front door they've been fighting</li>
+          <li>Replace burned-out lights they can't reach</li>
+          <li>General safety check and small fixes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tape-strip"></div>
+
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-label">Word on the Street</div>
+    <h2 class="section-title">Don't take our word for it.</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <blockquote>"I have so many friends who are single women with houses we can't keep up with. We ALL needed this."</blockquote>
+        <div class="attribution">Jessica N. &middot; Echo Park</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="section-label">Why Us</div>
+  <h2 class="section-title">Same two dads. Every time.</h2>
+  <p class="section-subtitle">No random strangers from an app. No rotating crews. You get Jason and Andy, the same two guys, every visit. We remember your house, your dog's name, and where you keep the breaker box.</p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>Not a TaskRabbit roulette</h3>
+      <p>Apps send you whoever's available. We show up because we said we would. You'll have our cell numbers, not a support ticket.</p>
+    </div>
+    <div class="why-card">
+      <h3>Way less than the "premium" guys</h3>
+      <p>Services like Honey Homes charge $300+/month whether you need help or not. We charge by the job, and our rates would make your actual dad proud.</p>
+    </div>
+    <div class="why-card">
+      <h3>Actually from the neighborhood</h3>
+      <p>We live here. Our kids go to school here. We're not a franchise or a startup parachuting into your zip code. We're the dads around the corner.</p>
+    </div>
+  </div>
+</section>
+
+<section class="retainer">
+  <div class="retainer-inner">
+    <div class="section-label">New</div>
+    <h2 class="section-title">Put a Dad on Retainer</h2>
+    <p class="retainer-desc">Some houses need a dad on speed dial. Our retainer plan gives you priority scheduling, a monthly check-in visit, and a discounted hourly rate. Think of it as a gym membership for your house.</p>
+
+    <div class="retainer-perks">
+      <div class="retainer-perk">
+        <h4>Monthly Check-in</h4>
+        <p>We walk through your place, tighten what's loose, fix what's small, and flag what's coming.</p>
+      </div>
+      <div class="retainer-perk">
+        <h4>Priority Scheduling</h4>
+        <p>Retainer clients go to the front of the line. Need us this week? Done.</p>
+      </div>
+      <div class="retainer-perk">
+        <h4>Discounted Rate</h4>
+        <p>Locked-in hourly rate below our standard pricing. The more we come, the more you save.</p>
+      </div>
+      <div class="retainer-perk">
+        <h4>Seasonal Prep</h4>
+        <p>Weatherstripping before winter. AC filters before summer. We handle the stuff you forget about.</p>
+      </div>
+    </div>
+
+    <a href="#contact" class="cta-btn">Ask About Retainer Plans</a>
   </div>
 </section>
 
@@ -699,7 +1179,7 @@
         <div class="stat-label">Dads on the job</div>
       </div>
       <div class="stat-box">
-        <span class="stat-number">4</span>
+        <span class="stat-number">7</span>
         <div class="stat-label">Neighborhoods served</div>
       </div>
       <div class="stat-box">
