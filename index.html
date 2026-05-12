@@ -365,12 +365,20 @@
     padding: 5rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-rows: auto auto;
+    gap: 2.5rem 3rem;
     align-items: center;
   }
 
+  .about-inner .about-text { grid-column: 1; grid-row: 1; }
+  .about-inner .about-photo { grid-column: 2; grid-row: 1; }
+  .about-inner .about-stats { grid-column: 1 / -1; grid-row: 2; }
+
   @media (max-width: 700px) {
-    .about-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .about-inner { grid-template-columns: 1fr; }
+    .about-inner .about-text,
+    .about-inner .about-photo,
+    .about-inner .about-stats { grid-column: 1; grid-row: auto; }
   }
 
   .about .section-label { color: var(--dad-orange-light); }
@@ -385,8 +393,12 @@
 
   .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+  }
+
+  @media (max-width: 700px) {
+    .about-stats { grid-template-columns: 1fr 1fr; }
   }
 
   .stat-box {
@@ -793,6 +805,88 @@
     opacity: 0.75;
     line-height: 1.5;
   }
+
+  /* ---- IN ACTION SECTION ---- */
+  .in-action {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .action-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    max-height: 480px;
+    background: var(--dark-brown);
+  }
+
+  .action-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .action-card .action-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem;
+    background: linear-gradient(transparent, rgba(61,43,31,0.85));
+    color: var(--warm-cream);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .action-card .action-label strong {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--dad-orange);
+  }
+
+  /* ---- ABOUT PHOTO ---- */
+  .about-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    max-height: 400px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .action-grid {
+      grid-template-columns: 1fr;
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .action-card {
+      max-height: 520px;
+    }
+
+    .about-photo {
+      order: -1;
+      max-height: 300px;
+    }
+  }
 </style>
 
 <!-- Meta Pixel Code -->
@@ -1069,6 +1163,33 @@
   </div>
 </section>
 
+<section class="in-action">
+  <div class="section-label">See Us In Action</div>
+  <h2 class="section-title">Real jobs. Real timelapses. No stock photos.</h2>
+  <p class="section-subtitle">Here's what it actually looks like when we show up.</p>
+
+  <div class="action-grid">
+    <div class="action-card">
+      <video autoplay loop muted playsinline>
+        <source src="timelapse-assembly.mp4" type="video/mp4">
+      </video>
+      <div class="action-label">
+        <strong>Cabinet Install</strong>
+        Assembling and positioning built-in storage. The homeowner stopped by mid-job to check our work.
+      </div>
+    </div>
+    <div class="action-card">
+      <video autoplay loop muted playsinline>
+        <source src="timelapse-mirror.mp4" type="video/mp4">
+      </video>
+      <div class="action-label">
+        <strong>Mirror Hanging</strong>
+        Two dads, one big mirror, zero broken glass. Teamwork makes the dream work.
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="why-us">
   <div class="section-label">Why Us</div>
   <h2 class="section-title">Same two dads. Every time.</h2>
@@ -1191,6 +1312,9 @@
       <h2 class="section-title">Just two dads who are handy.</h2>
       <p>We're Jason and Andy -- one's a cybersecurity nerd, the other's an actor. By day we do completely different things. But on weekends and evenings, we're the guys your neighbors call when something needs fixing.</p>
       <p>We're not licensed contractors. We're the dads who actually own the tools, know how to use them, and show up when we say we will. Fair prices, honest work, zero BS.</p>
+    </div>
+    <div class="about-photo">
+      <img src="jason-wall-work.jpg" alt="Jason from The Dad Squad sanding drywall" loading="lazy">
     </div>
     <div class="about-stats">
       <div class="stat-box">
