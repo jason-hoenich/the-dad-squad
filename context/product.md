@@ -2,7 +2,13 @@
 
 ## What It Is
 
-The Dad Squad is a rent-a-dad handyman service. The landing page markets home repair, furniture builds, and general fixes to homeowners in the Silver Lake, Atwater Village, Los Feliz, and Glendale neighborhoods of Los Angeles.
+The Dad Squad is a rent-a-dad handyman and tech-help service. Two core offerings:
+
+1. **AI & Tech Support** - Hands-on help for regular people learning to use ChatGPT, Claude, and other AI tools. Prompt coaching, practical use cases (drafting emails, comparing contractors, research, organizing life), and basic cybersecurity awareness. Positioned as "a neighbor showing you how," not a technical course.
+
+2. **Handyman Services** - Home repair, furniture builds, hauling, and general fixes for homeowners in Silver Lake, Atwater Village, Los Feliz, and Glendale.
+
+The landing page markets both to homeowners and locals in the Silver Lake, Atwater Village, Los Feliz, and Glendale neighborhoods of Los Angeles.
 
 ## Brand
 
