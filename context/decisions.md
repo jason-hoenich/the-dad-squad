@@ -4,6 +4,12 @@ Append-only. Newest entries at top. Every strategic decision made during a Claud
 
 ---
 
+## 2026-05-18
+
+- **Added Mulch Delivery & Install as a service.** Free mulch sourced from Griffith Park, delivered and spread. Customer pays hourly rate only. Added as a service card on the homepage and as line items under the Hauling & Moving task list.
+
+---
+
 ## 2026-05-14
 
 - **Added AI & Tech Support as a primary service offering.** Positioned above handyman services. Covers AI tool coaching (ChatGPT, Claude), prompt help, practical use cases for everyday people, and basic cybersecurity awareness. Fits the Dad Squad brand as approachable, non-technical guidance from a neighbor.
