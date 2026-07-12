@@ -1,5 +1,14 @@
 # The Dad Squad - Claude Context & Guidelines
 
+## Delegation Policy (token efficiency)
+
+Agent definitions in .claude/agents/: recon (haiku, read-only sweeps), code-mechanic (sonnet, specced code changes), verifier (haiku, post-change checks). The orchestrating model handles diagnosis, decisions, prod data, and credentials, and delegates by default:
+
+- Codebase sweeps, find-usages, audits: spawn recon, act on its report
+- Mechanical or batch code changes with a clear spec: spawn code-mechanic with the spec
+- Post-change verification (tsc, endpoint probes, assertions): spawn verifier
+- Do the work inline only when it is small (under ~3 files), judgment-heavy, or touches production data
+
 ## Working Preferences
 
 - Never use em dashes in any written content
