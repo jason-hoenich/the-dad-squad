@@ -4,6 +4,15 @@ Append-only. Newest entries at top. Every strategic decision made during a Claud
 
 ---
 
+## 2026-11-24
+
+- **Homepage redesign: dark "Studios" look in teal to lime.** Matches the HumanRisk Studios visual system (dark navy ground, Inter Tight heavy headlines with gradient, mono eyebrows, pill buttons, outlined "HEY DAD" watermark). Dropped the brown/orange palette.
+- **Phone number no longer displayed on the site.** All CTAs read "Text Dad" (sms link) / "Call Dad" / "Email Dad".
+- **Added "Creatives & studios" audience** to reflect growing creative LA clientele, plus a "How it works" three-step section.
+- **Published hourly rates on the retainer section:** $75/hr one dad, $125/hr two dads.
+
+---
+
 ## 2026-05-18
 
 - **Added Mulch Delivery & Install as a service.** Free mulch sourced from Griffith Park, delivered and spread. Customer pays hourly rate only. Added as a service card on the homepage and as line items under the Hauling & Moving task list.
