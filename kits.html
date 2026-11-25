@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2A1D14">
+<title>Kits, Training &amp; Gift Cards | The Dad Squad, Eastside LA</title>
+<meta content="Two Dad Squad toolkits, a one-hour in-home Training Hour, and gift cards good for any Dad Squad job. For new homeowners, new parents, and anyone done waiting on someone else." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.thedadsquad.la/kits" property="og:url"/>
+<meta content="The Dad Squad" property="og:site_name"/>
+<meta content="Dad Squad Kits, Training &amp; Gift Cards" property="og:title"/>
+<meta content="Your own tools, Dad-approved. Two toolkits, a one-hour in-home lesson, and gift cards for any Dad Squad job." property="og:description"/>
+<meta content="https://www.thedadsquad.la/og-image-v4.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Dad Squad Kits, Training &amp; Gift Cards" name="twitter:title"/>
+<meta content="Your own tools, Dad-approved. Two toolkits, a one-hour in-home lesson, and gift cards for any Dad Squad job." name="twitter:description"/>
+<meta content="https://www.thedadsquad.la/og-image-v4.png" name="twitter:image"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://www.thedadsquad.la/kits">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #2A1D14;
+    --surface: #3D2B1F;
+    --line: #4E3828;
+    --line2: #6B4226;
+    --ink: #FAF3E8;
+    --muted: #DCCAB4;
+    --faint: #B8A089;
+    --g1: #F4A261;
+    --g2: #F2D06B;
+    --grad: linear-gradient(100deg, #E8722A 0%, #F2D06B 100%);
+    --on-grad: #2A1D14;
+    --sans: 'Inter Tight', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--ground); color: var(--ink); font-size: 17px; line-height: 1.55; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  img, video { display: block; max-width: 100%; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+  section { scroll-margin-top: 80px; }
+  .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .eyebrow { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.18em; color: var(--g1); text-transform: uppercase; }
+  .eyebrow::before { content: "\25C6  "; }
+  h2.title { font-weight: 800; font-size: clamp(38px, 5vw, 56px); line-height: 1; letter-spacing: -0.045em; margin-top: 16px; }
+  .sub { color: var(--muted); margin-top: 18px; max-width: 680px; }
+  .pad { padding: 104px 0; }
+  .band { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .rule { border-top: 1px solid var(--line); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 30px; }
+  .grid { display: grid; gap: 16px; margin-top: 52px; }
+  .g3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .g4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .head-row { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end; }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 18px 32px; border-radius: 999px; font-weight: 600; font-size: 18px; text-decoration: none; transition: transform .15s, box-shadow .2s, border-color .2s; }
+  .btn-grad { background: var(--grad); color: var(--on-grad); }
+  .btn-grad:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(232,114,42,0.3); }
+  .btn-ghost { border: 1px solid var(--line2); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--g1); }
+  .btn-sm { padding: 12px 22px; font-size: 15px; }
+
+  /* nav */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(42,29,20,0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .logo-mark { width: 40px; height: 40px; border-radius: 11px; background: var(--grad); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-text b { font-weight: 800; font-size: 19px; letter-spacing: 0.02em; }
+  .logo-text small { font-family: var(--mono); font-size: 11px; letter-spacing: 0.32em; color: var(--g1); }
+  .nav-links { display: flex; align-items: center; gap: 30px; font-size: 16px; }
+  .nav-links a:not(.btn) { color: var(--muted); text-decoration: none; }
+  .nav-links a:not(.btn):hover { color: var(--ink); }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; background: radial-gradient(ellipse 60% 70% at 85% 0%, rgba(232,114,42,0.18), transparent 70%); }
+  .hero-watermark { position: absolute; left: 0; right: 0; top: -10px; text-align: center; font-weight: 900; font-size: clamp(110px, 17vw, 240px); line-height: 1; letter-spacing: -0.04em; color: transparent; -webkit-text-stroke: 2px var(--line); white-space: nowrap; pointer-events: none; user-select: none; }
+  .hero-inner { position: relative; max-width: 960px; margin: 0 auto; padding: 150px 32px 120px; text-align: center; }
+  .pill { display: inline-flex; gap: 12px; align-items: center; border: 1px solid var(--line2); background: var(--surface); color: var(--muted); font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.18em; padding: 10px 20px; border-radius: 999px; }
+  .pill span { color: var(--g1); }
+  .hero h1 { font-weight: 900; font-size: clamp(54px, 9vw, 104px); line-height: 0.95; letter-spacing: -0.055em; margin-top: 36px; }
+  .hero p.lead { font-size: clamp(18px, 2vw, 22px); color: var(--muted); max-width: 720px; margin: 36px auto 0; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 44px; }
+  .hero .fine { font-size: 15px; color: var(--faint); margin-top: 28px; }
+
+  /* steps */
+  .step-n { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--g1); }
+  .card h3 { font-weight: 800; font-size: 24px; letter-spacing: -0.03em; }
+  .step h3 { margin: 20px 0 10px; font-size: 26px; }
+  .card p { color: var(--muted); font-size: 16px; margin-top: 10px; }
+  .svc h3 { font-weight: 700; font-size: 19px; letter-spacing: -0.01em; }
+
+  /* full list */
+  .tasks-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 52px; }
+  .task-category { background: var(--ground); border: 1px solid var(--line); border-radius: 22px; padding: 28px; }
+  .task-category h3 { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--g1); margin-bottom: 16px; }
+  .task-list { list-style: none; }
+  .task-list li { color: var(--muted); font-size: 15.5px; padding: 7px 0; border-top: 1px solid var(--line); }
+  .task-list li:first-child { border-top: none; }
+  .pro-note { margin-top: 32px; color: var(--faint); font-size: 16px; max-width: 780px; }
+  .pro-note strong { color: var(--ink); }
+
+  /* testimonials */
+  .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+  .quote { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 44px; }
+  .quote blockquote { font-weight: 700; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.2; letter-spacing: -0.03em; }
+  .quote figcaption { margin-top: 28px; font-family: var(--mono); font-size: 13px; letter-spacing: 0.12em; color: var(--g1); text-transform: uppercase; }
+
+  /* in action */
+  .action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 52px; }
+  .action-card { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+  .action-card video { width: 100%; aspect-ratio: 16/10; object-fit: cover; background: var(--line); }
+  .action-label { padding: 22px 26px; color: var(--muted); font-size: 15.5px; }
+  .action-label strong { display: block; color: var(--ink); font-size: 18px; margin-bottom: 4px; }
+
+  /* retainer */
+  .retainer-frame { background: var(--grad); border-radius: 28px; padding: 2px; }
+  .retainer-inner { background: var(--ground); border-radius: 26px; padding: clamp(32px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 56px; }
+  .retainer-copy { flex: 1 1 380px; }
+  .retainer-copy h2 { font-weight: 900; font-size: clamp(42px, 5.5vw, 60px); line-height: 0.98; letter-spacing: -0.05em; margin-top: 16px; }
+  .rates { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 32px; color: var(--muted); }
+  .rates strong { color: var(--ink); font-size: 28px; font-weight: 800; }
+  .perks { flex: 1 1 440px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-content: start; }
+  .perks .card { padding: 26px; border-radius: 18px; }
+  .perks h3 { font-weight: 700; font-size: 18px; letter-spacing: 0; }
+  .perks p { font-size: 15px; margin-top: 8px; }
+
+  /* shop */
+  .shop-category-label { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 56px 0 20px; }
+  .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .shop-item { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; transition: border-color .2s, transform .15s; }
+  .shop-item:hover { border-color: var(--line2); transform: translateY(-3px); }
+  .shop-gallery { position: relative; aspect-ratio: 4/3; overflow: hidden; background: var(--line); cursor: pointer; }
+  .shop-gallery img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; opacity: 0; transition: opacity .4s ease; }
+  .shop-gallery img.active { opacity: 1; }
+  .shop-gallery-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 2; }
+  .shop-gallery-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.45); border: none; cursor: pointer; padding: 0; }
+  .shop-gallery-dot.active { background: #fff; }
+  .shop-details { padding: 24px; }
+  .shop-details h3 { font-weight: 700; font-size: 19px; letter-spacing: -0.01em; }
+  .shop-meta { font-size: 14.5px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+  .shop-price { font-family: var(--mono); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--g1); margin-top: 16px; }
+  .shop-cta { display: inline-block; margin-top: 16px; padding: 11px 22px; border-radius: 999px; background: var(--grad); color: var(--on-grad); font-weight: 600; font-size: 15px; text-decoration: none; }
+
+  /* about */
+  .about { display: flex; flex-wrap: wrap; gap: 64px; }
+  .about-copy { flex: 1 1 440px; }
+  .about-copy p { color: var(--muted); font-size: 19px; margin-top: 22px; }
+  .about-side { flex: 1 1 440px; display: flex; flex-direction: column; gap: 14px; }
+  .about-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .about-photo { border-radius: 22px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4/5; }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .stat { background: var(--ground); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+  .stat b { font-weight: 900; font-size: 48px; line-height: 1; letter-spacing: -0.05em; display: inline-block; }
+  .stat div { margin-top: 8px; color: var(--muted); font-size: 15px; }
+
+  /* cta */
+  .final { background: radial-gradient(ellipse 60% 70% at 85% 0%, rgba(232,114,42,0.18), transparent 70%); text-align: center; }
+  .final h2 { font-weight: 900; font-size: clamp(48px, 7.5vw, 88px); line-height: 0.95; letter-spacing: -0.055em; }
+  .hoods { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 36px; }
+  .hoods span { border: 1px solid var(--line2); color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; padding: 8px 16px; border-radius: 999px; text-transform: uppercase; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 14px; color: var(--faint); padding-top: 28px; padding-bottom: 28px; }
+
+  /* mobile */
+  .sticky-cta { display: none; }
+  @media (max-width: 860px) {
+    .nav-links a:not(.btn) { display: none; }
+    .hero-inner { padding: 110px 24px 90px; }
+    .wrap { padding: 0 24px; }
+    .pad { padding: 80px 0; }
+    .perks { grid-template-columns: 1fr; }
+    .quotes { grid-template-columns: 1fr; }
+    body { padding-bottom: 84px; }
+    .sticky-cta { display: flex; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; padding: 12px 16px; background: rgba(42,29,20,0.96); border-top: 1px solid var(--line); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .sticky-cta a { flex: 1; text-align: center; padding: 15px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+    .sticky-cta .t { background: var(--grad); color: var(--on-grad); }
+    .sticky-cta .c { border: 1px solid var(--line2); color: var(--ink); }
+  }
+
+  /* kits page */
+  .kits-hero .hero-inner { padding-bottom: 100px; }
+  .kit-compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 52px; align-items: stretch; }
+  .kit { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: clamp(28px, 4vw, 40px); display: flex; flex-direction: column; }
+  .kit-frame { background: var(--grad); border-radius: 26px; padding: 2px; display: flex; }
+  .kit-frame .kit { background: var(--ground); border: none; flex: 1; }
+  .kit-tag { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--g1); }
+  .kit h3 { font-weight: 900; font-size: clamp(28px, 3.4vw, 36px); line-height: 1; letter-spacing: -0.045em; margin-top: 14px; }
+  .kit .kit-pitch { color: var(--muted); font-size: 16.5px; margin-top: 14px; }
+  .kit-price { margin-top: 24px; display: flex; align-items: baseline; gap: 10px; }
+  .kit-price strong { font-weight: 900; font-size: 44px; letter-spacing: -0.05em; line-height: 1; }
+  .kit-price span { color: var(--faint); font-size: 15px; }
+  .kit-list { list-style: none; margin-top: 24px; flex: 1; }
+  .kit-list li { position: relative; padding: 9px 0 9px 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15.5px; }
+  .kit-list li:first-child { border-top: none; }
+  .kit-list li::before { content: "\2713"; position: absolute; left: 0; top: 9px; color: var(--g1); font-weight: 700; }
+  .kit-list li.plus::before { content: "+"; color: var(--g2); font-size: 18px; top: 6px; }
+  .kit-list li.plus { color: var(--ink); }
+  .kit-list .group { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); padding: 18px 0 6px; border-top: none; }
+  .kit-list .group::before { content: none; }
+  .kit .btn { margin-top: 28px; justify-content: center; }
+  .compare-note { margin-top: 24px; color: var(--faint); font-size: 15px; }
+  .price-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-top: 32px; }
+  .price-row strong { font-weight: 900; font-size: 48px; letter-spacing: -0.05em; line-height: 1; }
+  .price-row span { color: var(--muted); }
+  .bundle { margin-top: 20px; color: var(--muted); font-size: 16px; }
+  .bundle a { color: var(--g1); font-weight: 600; text-decoration: none; }
+  .gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 52px; }
+  .gift { position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 30px; aspect-ratio: 1.6 / 1; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; transition: transform .15s, border-color .2s; }
+  .gift:hover { transform: translateY(-3px); border-color: var(--g1); }
+  .gift::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; background: var(--grad); opacity: 0.18; }
+  .gift small { font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; color: var(--g1); text-transform: uppercase; }
+  .gift b { font-weight: 900; font-size: 52px; letter-spacing: -0.05em; line-height: 1; }
+  .gift em { font-style: normal; font-size: 14.5px; color: var(--muted); }
+  .for-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .for-list span { border: 1px solid var(--line2); color: var(--muted); font-size: 14.5px; padding: 8px 16px; border-radius: 999px; }
+  @media (max-width: 860px) {
+    .nav-links a.keep:not(.btn) { display: inline; font-size: 15px; }
+    .gift { aspect-ratio: auto; min-height: 170px; }
+  }
+</style>
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1242045007723965');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1242045007723965&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="The Dad Squad home">
+      <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A1D14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+      <span class="logo-text"><b>THE DAD SQUAD</b><small>EASTSIDE LA</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#retainer">Retainer</a>
+      <a href="/#shop">Shop</a>
+      <a href="/kits" class="keep" aria-current="page" style="color:var(--ink)">Kits &amp; Gifts</a>
+      <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27m%20interested%20in%20a%20kit!" class="btn btn-grad btn-sm">Text a Dad</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero kits-hero" id="top">
+  <div class="hero-watermark" aria-hidden="true">DIY DAD</div>
+  <div class="hero-inner">
+    <div class="pill"><span>&#9670;</span> NEW FOR THE HOLIDAYS</div>
+    <h1>Your own tools.<br><span class="grad-text">Dad-approved.</span></h1>
+    <p class="lead">Two toolkits we packed ourselves, a one-hour lesson in your own home, and gift cards for the people on your list who just got keys to a new place.</p>
+    <div class="ctas">
+      <a href="#kits" class="btn btn-grad">Compare the kits &rarr;</a>
+      <a href="#gifts" class="btn btn-ghost">Gift cards &rarr;</a>
+    </div>
+    <p class="fine">Picked by the same two dads who show up at your door.</p>
+  </div>
+</header>
+
+<section id="kits" class="rule pad">
+  <div class="wrap">
+    <div class="eyebrow">The kits</div>
+    <h2 class="title">Start with the basics. <span class="grad-text">Or skip ahead.</span></h2>
+    <p class="sub">We put in what we actually reach for on jobs and left out the junk that comes in the 200-piece box at the hardware store. Start with Essentials, or go big and handle the drill-and-mount jobs yourself.</p>
+
+    <div class="kit-compare">
+      <div class="kit">
+        <div class="kit-tag">The starting point</div>
+        <h3>Dad Squad Essentials Kit</h3>
+        <p class="kit-pitch">Everything a first-time homeowner needs for the basics. Hang the art, tighten the hinge, assemble the bookshelf, fix the wobble.</p>
+        <div class="kit-price"><strong>$XX</strong><span>one kit</span></div>
+        <ul class="kit-list">
+          <li class="group">60-piece tool set</li>
+          <li>Hammer</li>
+          <li>Tape measure</li>
+          <li>Level</li>
+          <li>Screwdrivers and bits</li>
+          <li>Hex keys</li>
+          <li>Nut drivers</li>
+          <li>Pliers</li>
+          <li>Carrying case</li>
+          <li class="group">600-piece hardware assortment</li>
+          <li>Wall anchors</li>
+          <li>Screws</li>
+          <li>Picture-hanging hardware</li>
+        </ul>
+        <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20order%20the%20Essentials%20Kit!" class="btn btn-ghost">Text to order Essentials &rarr;</a>
+      </div>
+
+      <div class="kit-frame"><div class="kit">
+        <div class="kit-tag">The step up</div>
+        <h3>The &ldquo;I Can Do This Sh*t On My Own&rdquo; Kit</h3>
+        <p class="kit-pitch">For the person whose ex took the tools. For the new homeowner. For anyone done waiting on somebody else to come over Saturday. This is the kit for mounting the TV, building the thing, and fixing it for real.</p>
+        <div class="kit-price"><strong>$XX</strong><span>one kit</span></div>
+        <ul class="kit-list">
+          <li>Everything in the Essentials Kit</li>
+          <li class="group">Plus</li>
+          <li class="plus">Cordless drill with battery and charger</li>
+          <li class="plus">Drill bit set</li>
+          <li class="plus">51-piece socket set</li>
+          <li class="plus">Stud finder</li>
+          <li class="plus">Utility knife</li>
+        </ul>
+        <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20order%20the%20I%20Can%20Do%20This%20On%20My%20Own%20Kit!" class="btn btn-grad">Text to order the step up &rarr;</a>
+      </div></div>
+    </div>
+    <p class="compare-note">Not sure which one? Text us what's on your list and we'll tell you straight.</p>
+  </div>
+</section>
+
+<section class="band pad">
+  <div class="wrap">
+    <div class="eyebrow">Who it's for</div>
+    <h2 class="title">Nobody's born knowing where the stud is.</h2>
+    <div class="grid g4">
+      <div class="card"><h3>Your ex took the tools</h3><p>And probably the good spatula. Start over with a set that's all yours.</p></div>
+      <div class="card"><h3>New homeowners</h3><p>The house came with an inspection report and zero screwdrivers.</p></div>
+      <div class="card"><h3>First place</h3><p>Adult kids in their first apartment, where the landlord takes three weeks to answer.</p></div>
+      <div class="card"><h3>Done waiting</h3><p>On a partner, a brother-in-law, or a guy who said he'd swing by. You've got this.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="training" class="pad">
+  <div class="wrap">
+    <div class="retainer-frame"><div class="retainer-inner">
+      <div class="retainer-copy">
+        <div class="eyebrow">Training Hour</div>
+        <h2>Buy the kit. <span class="grad-text">Learn it in an hour.</span></h2>
+        <p class="sub" style="font-size:19px">A Dad comes to your place and you do the work while we coach. By the end of the hour you've done the jobs yourself, on your own walls, and you know how to do them again next time.</p>
+        <div class="price-row"><strong>$XX</strong><span>/hour, in your home</span></div>
+        <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20book%20a%20Training%20Hour!" class="btn btn-grad" style="margin-top:32px">Book a Training Hour &rarr;</a>
+        <p class="bundle">Getting a kit too? <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20a%20kit%20plus%20a%20Training%20Hour!">Text us for a kit plus a Training Hour &rarr;</a></p>
+      </div>
+      <div class="perks">
+        <div class="card"><h3>Set wall anchors</h3><p>Which anchor goes in drywall, which one needs a stud, and how to set it so it holds.</p></div>
+        <div class="card"><h3>Hang it level</h3><p>Pictures, mirrors and shelves, straight the first time. No extra holes to hide.</p></div>
+        <div class="card"><h3>Patch small holes</h3><p>Fill, sand and touch up drywall so nobody can tell where the old nail was.</p></div>
+        <div class="card"><h3>Common fixes</h3><p>Loose handles, wobbly furniture, the cabinet door that won't close. Bring your list.</p></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section id="gifts" class="rule pad">
+  <div class="wrap">
+    <div class="eyebrow">Gift cards</div>
+    <h2 class="title">The gift that fixes <span class="grad-text">the wobbly table.</span></h2>
+    <p class="sub">Dad Squad gift cards are good for either kit, a Training Hour, or any Dad Squad job. A practical gift that actually gets used.</p>
+    <div class="for-list"><span>New homeowners</span><span>New parents</span><span>Recently single friends</span><span>Kids in their first place</span></div>
+    <div class="gift-grid">
+      <a class="gift" href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20buy%20a%20%24XX%20gift%20card!"><small>Gift card</small><b class="grad-text">$XX</b><em>Text to order &rarr;</em></a>
+      <a class="gift" href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20buy%20a%20%24XX%20gift%20card!"><small>Gift card</small><b class="grad-text">$XX</b><em>Text to order &rarr;</em></a>
+      <a class="gift" href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27d%20like%20to%20buy%20a%20%24XX%20gift%20card!"><small>Gift card</small><b class="grad-text">$XX</b><em>Text to order &rarr;</em></a>
+    </div>
+    <p class="compare-note">Text us the amount and who it's for. We'll take it from there.</p>
+  </div>
+</section>
+
+<section id="contact" class="final rule pad">
+  <div class="wrap" style="max-width:900px">
+    <h2>Questions? <span class="grad-text">Text a Dad.</span></h2>
+    <p class="sub" style="margin:24px auto 0;font-size:20px">Which kit, what size gift card, whether we can teach you to hang a 60-pound mirror. Ask away.</p>
+    <div class="hoods"><span>Silver Lake</span><span>Echo Park</span><span>Atwater Village</span><span>Los Feliz</span><span>Eagle Rock</span><span>Highland Park</span><span>Glendale</span></div>
+    <div class="ctas" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:44px">
+      <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%20have%20a%20question%20about%20the%20kits!" class="btn btn-grad">Text a Dad &rarr;</a>
+      <a href="mailto:heyDad@thedadsquad.la?subject=Kits%20%26%20Gift%20Cards" class="btn btn-ghost">Email Dad &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="rule">
+  <div class="wrap">
+    <span>&copy; 2026 The Dad Squad. Two dads, one toolbox.</span>
+    <span><a href="/" style="text-decoration:none">Back to the main site &rarr;</a></span>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="sms:+13234408809&amp;body=Hey%20Dad%2C%20I%27m%20interested%20in%20a%20kit!" class="t">Text a Dad</a>
+  <a href="#gifts" class="c">Gift cards</a>
+</div>
+
+</body>
+</html>

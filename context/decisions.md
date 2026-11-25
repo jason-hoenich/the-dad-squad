@@ -4,6 +4,12 @@ Append-only. Newest entries at top. Every strategic decision made during a Claud
 
 ---
 
+## 2026-11-25
+
+- **New Kits & Gifts page (/kits), launching before Christmas.** Two toolkits shown side by side: Dad Squad Essentials Kit (60-piece tool set + 600-piece hardware assortment, entry point) and the "I Can Do This Sh*t On My Own" Kit (Essentials plus cordless drill, drill bits, 51-piece socket set, stud finder, utility knife, step up). Plus a one-hour in-home Training Hour (client does the work, a Dad coaches) and gift cards good for kits, training, or any Dad Squad job. All ordering by prefilled SMS, same as the rest of the site. Prices TBD. "Kits & Gifts" nav link stays visible on mobile.
+
+---
+
 ## 2026-11-24
 
 - **Palette switched back to the original brand colors (same day).** New Studios layout kept, recolored to dark brown ground, cream text, orange to tape-yellow gradient. Share image is og-image-v3.png.

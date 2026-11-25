@@ -1,5 +1,12 @@
 {
   "rewrites": [
-    { "source": "/shop", "destination": "/index.html" }
+    {
+      "source": "/shop",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/kits",
+      "destination": "/kits.html"
+    }
   ]
 }
