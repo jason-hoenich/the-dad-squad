@@ -188,6 +188,8 @@
 
   /* kits page */
   .kits-hero .hero-inner { padding-bottom: 100px; }
+  .kits-hero h1 { font-size: clamp(46px, 9vw, 104px); }
+  .nowrap { white-space: nowrap; }
   .kit-compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 52px; align-items: stretch; }
   .kit { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: clamp(28px, 4vw, 40px); display: flex; flex-direction: column; }
   .kit-frame { background: var(--grad); border-radius: 26px; padding: 2px; display: flex; }
@@ -224,6 +226,8 @@
   .for-list span { border: 1px solid var(--line2); color: var(--muted); font-size: 14.5px; padding: 8px 16px; border-radius: 999px; }
   @media (max-width: 860px) {
     .nav-links a.keep:not(.btn) { display: inline; font-size: 15px; }
+    .nav-links .btn { display: none; }
+    .nav-links a, .logo-text b, .logo-text small { white-space: nowrap; }
     .gift { aspect-ratio: auto; min-height: 170px; }
   }
 </style>
@@ -267,7 +271,7 @@
   <div class="hero-watermark" aria-hidden="true">DIY DAD</div>
   <div class="hero-inner">
     <div class="pill"><span>&#9670;</span> NEW FOR THE HOLIDAYS</div>
-    <h1>Your own tools.<br><span class="grad-text">Dad-approved.</span></h1>
+    <h1>Your own tools.<br><span class="grad-text nowrap">Dad-approved.</span></h1>
     <p class="lead">Two toolkits we packed ourselves, a one-hour lesson in your own home, and gift cards for the people on your list who just got keys to a new place.</p>
     <div class="ctas">
       <a href="#kits" class="btn btn-grad">Compare the kits &rarr;</a>
