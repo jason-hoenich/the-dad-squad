@@ -4,6 +4,12 @@ Append-only. Newest entries at top. Every strategic decision made during a Claud
 
 ---
 
+## 2026-11-26
+
+- **Training leads, kits become an add-on.** Early feedback: kits read as "cute," training is what people want. Page moved to /learn (nav: "Learn & Gifts", /kits still resolves). Training lineup: Training Hour (entry), First Home Series (3 sessions: anchors and hanging; drywall, patch and paint; drills, studs and mounting), Neighborhood Session (small group, split cost). Kits sit below as "Want the tools you learned on?" Headline gift is Training Hour + Kit; gift cards are any amount. **No prices on the page**; pricing by text.
+
+---
+
 ## 2026-11-25
 
 - **New Kits & Gifts page (/kits), launching before Christmas.** Two toolkits shown side by side: Dad Squad Essentials Kit (60-piece tool set + 600-piece hardware assortment, entry point) and the "I Can Do This Sh*t On My Own" Kit (Essentials plus cordless drill, drill bits, 51-piece socket set, stud finder, utility knife, step up). Plus a one-hour in-home Training Hour (client does the work, a Dad coaches) and gift cards good for kits, training, or any Dad Squad job. All ordering by prefilled SMS, same as the rest of the site. Prices TBD. "Kits & Gifts" nav link stays visible on mobile.

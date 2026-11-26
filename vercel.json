@@ -5,8 +5,12 @@
       "destination": "/index.html"
     },
     {
+      "source": "/learn",
+      "destination": "/learn.html"
+    },
+    {
       "source": "/kits",
-      "destination": "/kits.html"
+      "destination": "/learn.html"
     }
   ]
 }
