@@ -4,6 +4,13 @@ Append-only. Newest entries at top. Every strategic decision made during a Claud
 
 ---
 
+## 2026-11-28
+
+- **Added /text short link** (thedadsquad.la/text) for Instagram bio, story link stickers, Facebook and print. Opens Messages with "Hey Dad, I need help!" prefilled on phones, button fallback, fires Meta Pixel Contact event. Number never shown as text.
+- **All sms links switched to `sms:+1...?&body=` format** so the prefilled message works on Android as well as iPhone.
+
+---
+
 ## 2026-11-26
 
 - **Training leads, kits become an add-on.** Early feedback: kits read as "cute," training is what people want. Page moved to /learn (nav: "Learn & Gifts", /kits still resolves). Training lineup: Training Hour (entry), First Home Series (3 sessions: anchors and hanging; drywall, patch and paint; drills, studs and mounting), Neighborhood Session (small group, split cost). Kits sit below as "Want the tools you learned on?" Headline gift is Training Hour + Kit; gift cards are any amount. **No prices on the page**; pricing by text.

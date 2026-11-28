@@ -11,6 +11,10 @@
     {
       "source": "/kits",
       "destination": "/learn.html"
+    },
+    {
+      "source": "/text",
+      "destination": "/text.html"
     }
   ]
 }
